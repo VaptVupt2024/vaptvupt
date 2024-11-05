@@ -1,0 +1,78 @@
+#cabecalho {
+  position: absolute; /* Make it fixed to the viewport */
+  top: 0; /* Stick to the top */
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 17px 24px 50px 45px;
+  box-sizing: border-box;
+  transition: 0.1s ease;
+  z-index: 100; /* Ensure it's on top */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#cabecalho h1 {
+  font-family: Roobert TWHINT Bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1.125rem);
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+  height: 44px;
+  display: flex;
+  align-items: center;
+
+  color: rgba(0, 17, 58, 0.8);
+}
+.diagnostico {
+  color: #fff !important;
+}
+
+@media (max-width: 888px) {
+  #cabecalho {
+    position: fixed;
+    top: 0;
+    padding: 17px 24px 50px 24px;
+    justify-content: center;
+  }
+}
+
+.dark-mode #cabecalho h1 {
+  color: rgba(0, 17, 58, 0.8);
+}
+
+#cabecalho button {
+  font-family: Roobert TWHINT Bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  height: 44px;
+
+  color: rgba(0, 17, 58);
+}
+
+#cabecalho button:hover {
+  transform: scale(0.96);
+}
+
+.dark-mode #cabecalho button {
+  background-color: rgba(0, 17, 58, 0.15);
+  color: #000;
+}

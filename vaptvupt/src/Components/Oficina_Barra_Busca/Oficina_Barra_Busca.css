@@ -1,0 +1,60 @@
+/* ================================================================ */
+/* BARRA DE PESQUISA */
+/* ================================================================ */
+
+#Oficina_Barra_Busca {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+#Oficina_Barra_Busca .label_barra_busca {
+  width: 100%;
+  height: 55px;
+  color: #2b66ff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #ffffff;
+  padding: 10px 24px;
+  gap: 17px;
+  box-sizing: border-box;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+  border-radius: 100px;
+  border: 2px solid #00113a10;
+  cursor: pointer;
+}
+#Oficina_Barra_Busca .label_barra_busca svg {
+  stroke-width: 3.5px;
+}
+#Oficina_Barra_Busca .label_barra_busca input {
+  width: 100%;
+  font-family: Roobert TWHINT SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+
+  color: rgba(0, 17, 58, 0.7);
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+#Oficina_Barra_Busca .label_barra_busca input::placeholder {
+  color: rgba(0, 17, 58, 0.4);
+}
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+
+.dark-mode #Oficina_Barra_Busca .label_barra_busca {
+  background-color: #00113a23;
+  color: #00113a;
+}
+.dark-mode .ofi_favo a label {
+  background-color: #00113a10;
+}
